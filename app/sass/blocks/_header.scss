@@ -1,3 +1,8 @@
 .header {
-    font-size: 20px;
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    &__img {
+        background-image: url(../img/home-page/big-banner.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }

@@ -5,4 +5,14 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        &-menu-logo {
+            grid-column-start: -3;
+            grid-column-end: -2;
+            height: 57px;
+        }
+    }
 }

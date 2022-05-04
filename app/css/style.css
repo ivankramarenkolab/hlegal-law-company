@@ -65,6 +65,18 @@ a {
   background-position: center;
 }
 
+.header__wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.header__wrap-menu-logo {
+  grid-column-start: -3;
+  grid-column-end: -2;
+  height: 57px;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,6 +90,8 @@ a {
   background: rgba(245, 245, 250, 0.2);
   margin: 0 -15px;
   padding: 10px 15px;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .nav__lang-list {

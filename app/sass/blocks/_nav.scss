@@ -5,6 +5,8 @@
     background: rgba(245, 245, 250, 0.2);
     margin: 0 -15px;
     padding: 10px 15px;
+    grid-column-start: 1;
+    grid-column-end: 3;
     &__lang {
         &-list {
             display: flex;

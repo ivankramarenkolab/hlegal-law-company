@@ -1,10 +1,8 @@
 .header {
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    &__img {
-        background-image: url(../img/home-page/big-banner.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+    background: url(../img/home-page/big-banner.svg),
+        linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-repeat: no-repeat;
+    background-position: center;
     &__wrap {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -13,6 +11,11 @@
             grid-column-start: -3;
             grid-column-end: -2;
             height: 57px;
+        }
+        &-icon-menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
         }
     }
 }

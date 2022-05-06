@@ -385,7 +385,8 @@ a {
 }
 
 .solution__box-subject-link--active {
-  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  background: -webkit-linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

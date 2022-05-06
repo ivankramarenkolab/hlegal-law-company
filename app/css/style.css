@@ -59,7 +59,8 @@ a {
 .header {
   background: url(../img/home-page/big-banner.svg), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
+  background-size: cover;
 }
 
 .header:target .header__menu {
@@ -74,6 +75,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
+  margin-bottom: 129px;
 }
 
 .header__wrap-menu-logo {
@@ -92,6 +94,45 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.header__subtitle {
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 159px;
+}
+
+.header__arrow-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+
+.header__arrow-down-border {
+  width: 42px;
+  height: 42px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__arrow-down-border:hover, .header__arrow-down-border:active {
+  -webkit-filter: invert(31%) sepia(100%) saturate(6241%) hue-rotate(331deg) brightness(94%) contrast(99%);
+          filter: invert(31%) sepia(100%) saturate(6241%) hue-rotate(331deg) brightness(94%) contrast(99%);
 }
 
 .nav {

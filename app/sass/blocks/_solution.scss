@@ -1,0 +1,52 @@
+.solution {
+    &__box {
+        margin-bottom: 30px;
+        &-subject {
+            display: flex;
+            overflow: auto;
+            -ms-overflow-style: none;
+            margin-bottom: 5px;
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+            &-link {
+                white-space: nowrap;
+                font-size: 38px;
+                line-height: 46px;
+                color: #B3B3BA;
+                border: 0;
+                -webkit-background-clip: text;
+                font-weight: 700;
+                cursor: pointer;
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+                &--active {
+                    background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+        &-border {
+            width: 100%;
+            height: 4px;
+            background-color: rgba(255, 255, 255, 0.3);
+            margin-bottom: 30px;
+        }
+        &-info {
+            &-title {
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-bottom: 30px;
+            }
+            &-text {
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

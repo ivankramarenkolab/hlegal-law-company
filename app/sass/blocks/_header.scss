@@ -1,14 +1,16 @@
 .header {
-    background: url(../img/home-page/big-banner.svg),
-        linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     &:target .header__menu {
         top: 0;
     }
     &:target .icon__menu {
     position: static;
+    }
+    &__bg-img {
+        background-image: url(../img/home-page/big-banner.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-bottom: 30px;
     }
     &__wrap {
         display: grid;

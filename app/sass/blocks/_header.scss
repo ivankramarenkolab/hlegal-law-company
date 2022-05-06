@@ -3,6 +3,12 @@
         linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     background-repeat: no-repeat;
     background-position: center;
+    &:target .header__menu {
+        top: 0;
+    }
+    &:target .icon__menu {
+    position: static;
+    }
     &__wrap {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

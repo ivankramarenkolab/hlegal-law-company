@@ -9,9 +9,9 @@
     <title>hlegal-law-company</title>
 </head>
 <body>
-    <header id="open" class="header">
+    <header class="header">
         <div class="header__bg-img">
-            <div id="close" class="container">
+            <div class="container">
                 <div class="header__wrap">
                     <div class="nav">
                         <nav class="nav__lang">
@@ -34,7 +34,7 @@
                     </div>
                     <nav class="header__menu">
                         <ul class="header__menu-list">
-                            <a href="#close" class="close-icon__menu"></a>
+                            <a href="#" class="close-icon__menu"></a>
                             <li class="header__menu-list-item"><a href="#" class="header__menu-list-link">about us</a></li>
                             <li class="header__menu-list-item"><a href="#" class="header__menu-list-link">services</a></li>
                             <li class="header__menu-list-item"><a href="#" class="header__menu-list-link">team</a></li>
@@ -43,7 +43,7 @@
                         </ul>
                     </nav>
                     <div class="header__wrap-icon-menu">
-                        <a href="#open" class="icon__menu"><span class="icon__menu-span"></span></a>
+                        <a href="#" class="icon__menu"><span class="icon__menu-span"></span></a>
                     </div>
                 </div>
                 <p class="header__subtitle">you legal solutions provider</p>
@@ -79,5 +79,25 @@
             </div>
         </div>
     </header>
+    <script>
+const menu = document.querySelector('.header__menu');
+const burger = document.querySelector('.header__wrap-icon-menu');
+const overlay = document.querySelector('.header__menu-list');
+const closeicon = document.querySelector('.close-icon__menu');
+const body = document.querySelector('body');
+
+burger.addEventListener('click', () => {
+    menu.classList.toggle('show');
+    overlay.classList.toggle('show');
+    body.classList.toggle('stop-scroll');
+});
+
+closeicon.addEventListener('click', () => {
+    menu.classList.remove('show');
+    overlay.classList.remove('show');
+    body.classList.remove('stop-scroll');
+});
+
+    </script>
 </body>
 </html>

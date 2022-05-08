@@ -487,7 +487,7 @@ a {
   content: "";
   height: 11px;
   width: 8px;
-  background-image: url(../../img/services-page/right-arrow.svg);
+  background-image: url(../img/services-page/right-arrow.svg);
   margin-left: 3px;
 }
 
@@ -537,27 +537,27 @@ a {
 }
 
 .service__box-pic-img--it {
-  background-image: url(../../img/services-page/it-img.svg);
+  background-image: url(../img/services-page/it-img.svg);
 }
 
 .service__box-pic-img--comprehensive {
-  background-image: url(../../img/services-page/comprehensive-img.svg);
+  background-image: url(../img/services-page/comprehensive-img.svg);
 }
 
 .service__box-pic-img--structuring {
-  background-image: url(../../img/services-page/structuring-img.svg);
+  background-image: url(../img/services-page/structuring-img.svg);
 }
 
 .service__box-pic-img--building {
-  background-image: url(../../img/services-page/building-img.svg);
+  background-image: url(../img/services-page/building-img.svg);
 }
 
 .service__box-pic-img--protection {
-  background-image: url(../../img/services-page/protection-mg.svg);
+  background-image: url(../img/services-page/protection-mg.svg);
 }
 
 .service__box-pic-img--judicial {
-  background-image: url(../../img/services-page/judicial-mg.svg);
+  background-image: url(../img/services-page/judicial-mg.svg);
 }
 
 .service__box-desc-title {

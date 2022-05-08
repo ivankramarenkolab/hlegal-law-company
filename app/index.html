@@ -34,7 +34,7 @@
                     </div>
                     <nav class="header__menu">
                         <ul class="header__menu-list">
-                            <a href="#" class="close-icon__menu"></a>
+                            <div class="close-icon__menu"></div>
                             <li class="header__menu-list-item"><a href="#" class="header__menu-list-link">about us</a></li>
                             <li class="header__menu-list-item"><a href="#" class="header__menu-list-link">services</a></li>
                             <li class="header__menu-list-item"><a href="#" class="header__menu-list-link">team</a></li>
@@ -43,7 +43,7 @@
                         </ul>
                     </nav>
                     <div class="header__wrap-icon-menu">
-                        <a href="#" class="icon__menu"><span class="icon__menu-span"></span></a>
+                        <div class="icon__menu"><span class="icon__menu-span"></span></div>
                     </div>
                 </div>
                 <p class="header__subtitle">you legal solutions provider</p>
@@ -60,13 +60,13 @@
             <div class="container">
                 <div class="solution__box">
                     <div class="solution__box-subject">
-                        <button href="#" class="solution__box-subject-link solution__box-subject-link--active">Consistent</button>
-                        <button href="#" class="solution__box-subject-link">Customer oriented</button>
-                        <button href="#" class="solution__box-subject-link">Innovative</button>
-                        <button href="#" class="solution__box-subject-link">Business oriented</button>
+                        <div class="solution__box-subject-link solution__box-subject-link--active consistent">Consistent</div>
+                        <div class="solution__box-subject-link customer">Customer oriented</div>
+                        <div class="solution__box-subject-link innovative">Innovative</div>
+                        <div class="solution__box-subject-link business">Business oriented</div>
                     </div>
                     <div class="solution__box-border"></div>
-                    <div class="solution__box-info">
+                    <div class="solution__box-info consistent-text visible">
                         <h2 class="solution__box-info-title">
                             We turn the idea of legal services
                         </h2>
@@ -75,11 +75,39 @@
                             Many of them form the practice of applying the law of the sea in Ukraine.
                         </p>
                     </div>
+                    <div class="solution__box-info customer-text">
+                        <h2 class="solution__box-info-title">
+                            Olor quis, mollitia ipsum doloremque deleniti
+                        </h2>
+                        <p class="solution__box-info-text">
+                            Laudantium sequi sit saepe consequatur dicta amet laboriosam alias explicabo hic adipisci! Suscipit et blanditiis, rerum quis nihil iste exercitationem a, 
+                            nobis aliquam voluptatibus labore architecto, cupiditate at quisquam numquam
+                        </p>
+                    </div>
+                    <div class="solution__box-info innovative-text">
+                        <h2 class="solution__box-info-title">
+                            Quod, tempora magnam natus
+                        </h2>
+                        <p class="solution__box-info-text">
+                            Ab nam vitae ex quisquam debitis atque, cupiditate quibusdam? Molestias, eum temporibus! 
+                            Velit quibusdam facere a, ab accusamus repellendus nostrum est error odio veniam quo aliquid?
+                        </p>
+                    </div>
+                    <div class="solution__box-info business-text">
+                        <h2 class="solution__box-info-title">
+                            Obcaecati, eligendi rerum
+                        </h2>
+                        <p class="solution__box-info-text">
+                            Reprehenderit officiis tempore nihil asperiores pariatur debitis incidunt ut fugiat architecto commodi, 
+                            laborum maxime, unde, voluptatum minima ratione ex cumque repellendus earum ab reiciendis? Accusantium, a temporibus.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <script>
+        // Burger menu javascript.
 const menu = document.querySelector('.header__menu');
 const burger = document.querySelector('.header__wrap-icon-menu');
 const overlay = document.querySelector('.header__menu-list');
@@ -96,6 +124,71 @@ closeicon.addEventListener('click', () => {
     menu.classList.remove('show');
     overlay.classList.remove('show');
     body.classList.remove('stop-scroll');
+});
+
+body.addEventListener('click', (event) => {
+    const element = event.target;
+
+    if (element.classList.contains('header__menu')) {
+        menu.classList.remove('show');
+        overlay.classList.remove('show');
+        burger.classList.remove('show');
+        body.classList.remove('stop-scroll');
+    }
+})
+
+        // Solution javascript.
+const consistent = document.querySelector('.consistent');
+const consistent_text = document.querySelector('.consistent-text');
+const customer = document.querySelector('.customer');
+const customer_text = document.querySelector('.customer-text');
+const innovative = document.querySelector('.innovative');
+const innovative_text = document.querySelector('.innovative-text');
+const business = document.querySelector('.business');
+const business_text = document.querySelector('.business-text');
+
+consistent.addEventListener('click', () => {
+    consistent_text.classList.add('visible');
+    customer_text.classList.remove('visible');
+    innovative_text.classList.remove('visible');
+    business_text.classList.remove('visible');
+    consistent.classList.add('solution__box-subject-link--active');
+    customer.classList.remove('solution__box-subject-link--active');
+    innovative.classList.remove('solution__box-subject-link--active');
+    business.classList.remove('solution__box-subject-link--active');
+});
+
+customer.addEventListener('click', () => {
+    consistent_text.classList.remove('visible');
+    customer_text.classList.add('visible');
+    innovative_text.classList.remove('visible');
+    business_text.classList.remove('visible');
+    consistent.classList.remove('solution__box-subject-link--active');
+    customer.classList.add('solution__box-subject-link--active');
+    innovative.classList.remove('solution__box-subject-link--active');
+    business.classList.remove('solution__box-subject-link--active');
+});
+
+innovative.addEventListener('click', () => {
+    consistent_text.classList.remove('visible');
+    customer_text.classList.remove('visible');
+    innovative_text.classList.add('visible');
+    business_text.classList.remove('visible');
+    consistent.classList.remove('solution__box-subject-link--active');
+    customer.classList.remove('solution__box-subject-link--active');
+    innovative.classList.add('solution__box-subject-link--active');
+    business.classList.remove('solution__box-subject-link--active');
+});
+
+business.addEventListener('click', () => {
+    consistent_text.classList.remove('visible');
+    customer_text.classList.remove('visible');
+    innovative_text.classList.remove('visible');
+    business_text.classList.add('visible');
+    consistent.classList.remove('solution__box-subject-link--active');
+    customer.classList.remove('solution__box-subject-link--active');
+    innovative.classList.remove('solution__box-subject-link--active');
+    business.classList.add('solution__box-subject-link--active');
 });
 
     </script>

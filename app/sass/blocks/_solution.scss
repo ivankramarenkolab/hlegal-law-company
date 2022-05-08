@@ -15,14 +15,11 @@
                 line-height: 46px;
                 color: #B3B3BA;
                 border: 0;
-                -webkit-background-clip: text;
-                font-weight: 700;
                 cursor: pointer;
                 &:not(:last-child) {
                     margin-right: 30px;
                 }
                 &--active {
-                    font-family: 'Montserrat', 'Arial', sans-serif;
                     background: -webkit-linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -36,6 +33,7 @@
             margin-bottom: 30px;
         }
         &-info {
+            display: none;
             &-title {
                 font-size: 20px;
                 line-height: 24px;
@@ -49,5 +47,14 @@
                 color: #FFFFFF;
             }
         }
+    }
+}
+
+.consistent-text,
+.customer-text,
+.innovative-text,
+.business-text {
+    &.visible {
+        display: block;
     }
 }

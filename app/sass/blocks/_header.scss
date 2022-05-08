@@ -1,5 +1,7 @@
 .header {
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    margin-bottom: 50px;
     &__bg-img {
         background-image: url(../img/home-page/big-banner.svg);
         background-repeat: no-repeat;
@@ -14,7 +16,10 @@
         &-menu-logo {
             grid-column-start: -3;
             grid-column-end: -2;
-            height: 57px;
+            margin: 15px 0;
+            &-img {
+                height: 32px;
+            }
         }
         &-icon-menu {
             display: flex;
@@ -45,6 +50,29 @@
             &:active {
                 filter: invert(31%) sepia(100%) saturate(6241%) hue-rotate(331deg) brightness(94%) contrast(99%);
             }
+        }
+    }
+    &__shadow {
+        position: relative;
+        &::after {
+            content: '';
+            background-color: #CACADB;
+            height: 10px;
+            border-radius: 0px 0px 12px 12px;
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            bottom: -10px;
+        }
+        &::before {
+            content: '';
+            background-color: #E7E7F2;
+            height: 10px;
+            border-radius: 0px 0px 12px 12px;
+            position: absolute;
+            left: 40px;
+            right: 40px;
+            bottom: -20px;
         }
     }
 }

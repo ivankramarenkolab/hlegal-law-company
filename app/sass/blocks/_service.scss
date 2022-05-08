@@ -1,0 +1,77 @@
+.service {
+    &-link {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        &::after {
+            content: "";
+            height: 11px;
+            width: 8px;
+            background-image: url(../../img/services-page/right-arrow.svg);
+            margin-left: 3px;
+        }
+        &-item {
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #24A3FF;
+        }
+    }
+    &-title {
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 30px;
+    }
+    &__box {
+        padding-bottom: 30px;
+        &:last-child {
+            padding-bottom: 60px;
+        }
+        &-pic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            background: #FFFFFF;
+            border-radius: 24px;
+            width: 92px;
+            height: 92px;
+            &-img {
+                width: 64px;
+                height: 64px;
+                &--it {
+                    background-image: url(../../img/services-page/it-img.svg);
+                }
+                &--comprehensive {
+                    background-image: url(../../img/services-page/comprehensive-img.svg);
+                }
+                &--structuring {
+                    background-image: url(../../img/services-page/structuring-img.svg);
+                }
+                &--building {
+                    background-image: url(../../img/services-page/building-img.svg);
+                }
+                &--protection {
+                    background-image: url(../../img/services-page/protection-mg.svg);
+                }
+                &--judicial {
+                    background-image: url(../../img/services-page/judicial-mg.svg);
+                }
+            }
+        }
+        &-desc {
+            &-title {
+                font-size: 22px;
+                line-height: 27px;
+                color: #24A3FF;
+                margin-bottom: 15px;
+            }
+            &-text {
+                font-weight: 400;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

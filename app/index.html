@@ -28,8 +28,8 @@
                         </a>
                     </div>
                     <div class="header__wrap-menu-logo">
-                        <a href="#">
-                        <img src="./img/menu-img/menu-logo.svg" alt="menu logo">
+                        <a href="./index.html">
+                            <img src="./img/menu-img/menu-logo.svg" class="header__wrap-menu-logo-img" alt="menu logo">
                         </a>
                     </div>
                     <nav class="header__menu">
@@ -48,7 +48,7 @@
                 </div>
                 <p class="header__subtitle">you legal solutions provider</p>
                 <div class="header__arrow-down">
-                    <a href="#" class="header__arrow-down-border">
+                    <a href="#arrow-down" class="header__arrow-down-border">
                         <div class="header__arrow-down-border-wrap">
                             <img src="./img/home-page/arrow-down.svg" class="header__arrow-down-border-wrap-img" alt="arrow down">
                         </div>
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </div>
-        <div class="solution">
+        <div id="arrow-down" class="solution">
             <div class="container">
                 <div class="solution__box">
                     <div class="solution__box-subject">
@@ -105,6 +105,100 @@
                 </div>
             </div>
         </div>
+        <div class="service">
+            <div class="container">
+                <div class="service-link">
+                    <a href="#" class="service-link-item">Services</a>
+                </div>
+                <h2 class="service-title">
+                    What can we do better than others?
+                </h2>
+                <div class="service__box">
+                    <div class="service__box-pic">
+                        <div class="service__box-pic-img service__box-pic-img--it"></div>
+                    </div>
+                    <div class="service__box-desc">
+                        <h3 class="service__box-desc-title">
+                            IT and e-commerce
+                        </h3>
+                        <p class="service__box-desc-text">
+                            An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. 
+                            But there is not much work to do to hire an in-house lawyer.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__box">
+                    <div class="service__box-pic">
+                        <div class="service__box-pic-img service__box-pic-img--comprehensive"></div>
+                    </div>
+                    <div class="service__box-desc">
+                        <h3 class="service__box-desc-title">
+                            Comprehensive daily legal support
+                        </h3>
+                        <p class="service__box-desc-text">
+                            In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. 
+                            And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__box">
+                    <div class="service__box-pic">
+                        <div class="service__box-pic-img service__box-pic-img--structuring"></div>
+                    </div>
+                    <div class="service__box-desc">
+                        <h3 class="service__box-desc-title">
+                            Structuring corporate relationships
+                        </h3>
+                        <p class="service__box-desc-text">
+                            Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__box">
+                    <div class="service__box-pic">
+                        <div class="service__box-pic-img service__box-pic-img--building"></div>
+                    </div>
+                    <div class="service__box-desc">
+                        <h3 class="service__box-desc-title">
+                            Building contractual relations
+                        </h3>
+                        <p class="service__box-desc-text">
+                            Once a week, or week after month, you have your own lawyer by your side. 
+                            Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__box">
+                    <div class="service__box-pic">
+                        <div class="service__box-pic-img service__box-pic-img--protection"></div>
+                    </div>
+                    <div class="service__box-desc">
+                        <h3 class="service__box-desc-title">
+                            Protection of business, intellectual property
+                        </h3>
+                        <p class="service__box-desc-text">
+                            And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. 
+                            One way or another, all Axon Partners will work for you instead of a corporate lawyer.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__box">
+                    <div class="service__box-pic">
+                        <div class="service__box-pic-img service__box-pic-img--judicial"></div>
+                    </div>
+                    <div class="service__box-desc">
+                        <h3 class="service__box-desc-title">
+                            Judicial representation
+                        </h3>
+                        <p class="service__box-desc-text">
+                            Is it a small, medium-sized company or a market leader? Local business or multinational company? 
+                            Do you have your own legal department or not?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__shadow"></div>
     </header>
     <script>
         // Burger menu javascript.
@@ -135,7 +229,7 @@ body.addEventListener('click', (event) => {
         burger.classList.remove('show');
         body.classList.remove('stop-scroll');
     }
-})
+});
 
         // Solution javascript.
 const consistent = document.querySelector('.consistent');

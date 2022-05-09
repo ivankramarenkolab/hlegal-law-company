@@ -575,7 +575,7 @@ a {
 
 .slider__box {
   background-color: #F5F5FA;
-  border-radius: 0 0 12px 12px;
+  border-radius: 12px 12px 12px 12px;
 }
 
 .slider__box-pic {
@@ -622,6 +622,30 @@ a {
   line-height: 22px;
   color: #B3B3BA;
   margin-bottom: 30px;
+}
+
+.slick-dots {
+  bottom: -47px;
+}
+
+.slick-dots li button:before {
+  font-size: 16px;
+  color: #24A3FF;
+  opacity: 0.2;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #24A3FF;
+  opacity: 1;
+}
+
+.slick-dots li button:hover {
+  color: #24A3FF;
+  opacity: 0.6;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 105px;
 }
 
 /*# sourceMappingURL=style.css.map */

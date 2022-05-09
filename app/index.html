@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 
     <link rel="stylesheet" href="./css/style.css">
     <title>hlegal-law-company</title>
@@ -200,8 +202,37 @@
         </div>
         <div class="header__shadow"></div>
     </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <div class="slider__box">
+                    <div class="slider__box-pic">
+                        <img src="./img/team/Team-1.jpg" class="slider__box-pic-img" alt="Team">
+                    </div>
+                    <div class="slider__box-desc">
+                        <div class="slider__box-desc-link service-link">
+                            <a href="#" class="slider__box-desc-link-team service-link-item">команда</a>
+                        </div>
+                        <p class="slider__box-desc-text">
+                            Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                        </p>
+                        <div class="slider__box-desc-name">
+                            <p class="slider__box-desc-name-who">
+                                Олександр Олександровський
+                            </p>
+                            <p class="slider__box-desc-name-position">
+                                Керуючий партнер
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div><img src="./img/menu-img/menu-logo.svg" alt=""></div>
+                <div><img src="./img/menu-img/menu-logo.svg" alt=""></div>
+            </div>
+        </div>
+    </main>
     <script>
-        // Burger menu javascript.
+        // <!-- Burger menu javascript. -->
 const menu = document.querySelector('.header__menu');
 const burger = document.querySelector('.header__wrap-icon-menu');
 const overlay = document.querySelector('.header__menu-list');
@@ -231,7 +262,7 @@ body.addEventListener('click', (event) => {
     }
 });
 
-        // Solution javascript.
+        // <!-- Solution javascript -->
 const consistent = document.querySelector('.consistent');
 const consistent_text = document.querySelector('.consistent-text');
 const customer = document.querySelector('.customer');
@@ -286,5 +317,21 @@ business.addEventListener('click', () => {
 });
 
     </script>
+
+        <!-- Slider javascript -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows: false
+});
+    </script>
 </body>
 </html>
+

@@ -240,7 +240,45 @@ a {
 }
 
 .footer {
-  font-size: 20px;
+  background-color: #F5F5FA;
+}
+
+.footer__wrap {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer__address {
+  margin-bottom: 20px;
+}
+
+.footer__address-text {
+  font-weight: 400;
+  line-height: 20px;
+  color: #323264;
+  margin-bottom: 10px;
+}
+
+.footer__contact {
+  margin-bottom: 30px;
+}
+
+.footer__contact-facebook {
+  margin-bottom: 10px;
+}
+
+.footer__contact-tel {
+  margin-bottom: 10px;
+}
+
+.footer__contact-tel-link {
+  color: #46466E;
+}
+
+.footer__law {
+  font-weight: 400;
+  line-height: 20px;
+  color: #B3B3BA;
 }
 
 .header__menu {
@@ -406,6 +444,7 @@ a {
 
 .solution__box {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .solution__box-subject {
@@ -414,7 +453,7 @@ a {
   display: flex;
   overflow: auto;
   -ms-overflow-style: none;
-  margin-bottom: 5px;
+  margin: 0 -15px 5px 0;
 }
 
 .solution__box-subject::-webkit-scrollbar {
@@ -439,6 +478,15 @@ a {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.solution__box-subject-blur {
+  background-image: url(../img/home-page/right-blur.png);
+  position: absolute;
+  top: 2px;
+  right: -15px;
+  width: 50px;
+  height: 41px;
 }
 
 .solution__box-border {
@@ -746,7 +794,6 @@ a {
 
 .publications__box {
   border-bottom: 2px solid #E6E6F0;
-  margin-bottom: 30px;
 }
 
 .publications__box-cart {

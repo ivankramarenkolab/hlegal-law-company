@@ -1,11 +1,12 @@
 .solution {
     &__box {
         margin-bottom: 30px;
+        position: relative;
         &-subject {
             display: flex;
             overflow: auto;
             -ms-overflow-style: none;
-            margin-bottom: 5px;
+            margin: 0 -15px 5px 0;
             &::-webkit-scrollbar {
                 width: 0;
             }
@@ -24,6 +25,14 @@
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
+            }
+            &-blur {
+                background-image: url(../img/home-page/right-blur.png);
+                position: absolute;
+                top: 2px;
+                right: -15px;
+                width: 50px;
+                height: 41px;
             }
         }
         &-border {

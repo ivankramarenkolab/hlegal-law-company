@@ -1,3 +1,33 @@
 .footer {
-    font-size: 20px;
+    background-color: #F5F5FA;
+    &__wrap {
+        text-align: center;
+        padding: 30px 0;
+    }
+    &__address {
+        margin-bottom: 20px;
+        &-text {
+            font-weight: 400;
+            line-height: 20px;
+            color: #323264;
+            margin-bottom: 10px;
+        }
+    }
+    &__contact {
+        margin-bottom: 30px;
+        &-facebook {
+            margin-bottom: 10px;
+        }
+        &-tel {
+            margin-bottom: 10px;
+            &-link {
+                color: #46466E;
+            }
+        }
+    }
+    &__law {
+        font-weight: 400;
+        line-height: 20px;
+        color: #B3B3BA;
+    }
 }

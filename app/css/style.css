@@ -575,7 +575,7 @@ a {
 
 .slider__box {
   background-color: #F5F5FA;
-  border-radius: 12px 12px 12px 12px;
+  border-radius: 12px;
 }
 
 .slider__box-pic {
@@ -727,6 +727,63 @@ a {
 
 .companies__box-bg:nth-child(n+7) {
   display: none;
+}
+
+.publications {
+  background-color: #F5F5FA;
+}
+
+.publications__title {
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.publications__box {
+  border-bottom: 2px solid #E6E6F0;
+  margin-bottom: 30px;
+}
+
+.publications__box-cart {
+  border-radius: 8px;
+  background: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.publications__box-cart-img {
+  background-color: #4400ff;
+  height: 200px;
+  width: 100%;
+}
+
+.publications__box-cart-desc {
+  padding: 30px;
+}
+
+.publications__box-cart-desc-title {
+  margin-bottom: 15px;
+}
+
+.publications__box-cart-desc-title-link {
+  line-height: 20px;
+  color: #24A3FF;
+}
+
+.publications__box-cart-desc-date {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  border-bottom: 4px solid #E6E6F0;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.publications__box-cart-desc-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

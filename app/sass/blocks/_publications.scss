@@ -1,0 +1,52 @@
+.publications {
+    background-color: #F5F5FA;
+    &__link {
+        &-item {
+
+        }
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    &__box {
+        border-bottom: 2px solid #E6E6F0;
+        margin-bottom: 30px;
+        &-cart {
+            border-radius: 8px;
+            background: #FFFFFF;
+            margin-bottom: 30px;
+            &-img {
+                background-color:rgb(68, 0, 255);
+                height: 200px;
+                width: 100%;
+            }
+            &-desc {
+                padding: 30px;
+                &-title {
+                    margin-bottom: 15px;
+                    &-link {
+                        line-height: 20px;
+                        color: #24A3FF;
+                    }
+                }
+                &-date {
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #B3B3BA;
+                    border-bottom: 4px solid #E6E6F0;
+                    padding-bottom: 15px;
+                    margin-bottom: 15px;
+                }
+                &-text {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

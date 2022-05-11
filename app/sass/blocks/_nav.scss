@@ -51,3 +51,44 @@
         display: none;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .nav {
+        margin: 0;
+        background: none;
+        padding: 0 0 30px;
+        &__lang {
+            &-list {
+                &-item {
+
+                }
+                &-link {
+                    &--active {
+
+                        }
+                    &--dark {
+
+                    }
+                    &--dark:hover {
+
+                    }
+                    &--white {
+
+                    }
+                    &--white:hover {
+
+                    }
+                }
+            }
+        }
+        &__address {
+            display: block;
+        }
+        &__tel {
+
+        }
+        &__facebook {
+            display: block;
+        }
+    }
+}

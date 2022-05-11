@@ -1,0 +1,61 @@
+.companies {
+    &-title {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__box {
+        background-color: #F48B30;
+        margin: 0 -15px;
+        &-bg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 120px;
+        }
+        &-bg:nth-child(1) {
+            background-color: #1C4280;
+        }
+        &-bg:nth-child(2) {
+            background-color: #143646;
+        }
+        &-bg:nth-child(3) {
+            background-color: #F48B30;
+        }
+        &-bg:nth-child(4) {
+            background-color: #9E4DC3;
+        }
+        &-bg:nth-child(5) {
+            background-color: #FD9339;
+        }
+        &-bg:nth-child(6) {
+            background-color: #E2E2E4;
+        }
+        &-bg:nth-child(7) {
+            background-color: #C71C36;
+        }
+        &-bg:nth-child(8) {
+            background-color: #DCF3F9;
+        }
+        &-bg:nth-child(9) {
+            background-color: #EAEAEA;
+        }
+        &-bg:nth-child(10) {
+            background-color: #282240;
+        }
+        &-bg:nth-child(11) {
+            background-color: #1D4568;
+        }
+        &-bg:nth-child(12) {
+            background-color: #000000;
+        }
+        &-bg:nth-child(n+7){
+            display: none;
+        }
+    }
+}

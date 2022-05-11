@@ -1,8 +1,13 @@
 .publications {
     background-color: #F5F5FA;
+    &__link {
+        margin-bottom: 5px;
+        padding-top: 30px;
+    }
     &__title {
         font-size: 30px;
         line-height: 37px;
+        margin-bottom: 30px;
     }
     &__box {
         border-bottom: 2px solid #E6E6F0;
@@ -15,6 +20,7 @@
                 background-color:rgb(68, 0, 255);
                 height: 200px;
                 width: 100%;
+                border-radius: 8px 8px 0px 0px;
             }
             &-desc {
                 padding: 30px;

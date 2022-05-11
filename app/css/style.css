@@ -733,9 +733,15 @@ a {
   background-color: #F5F5FA;
 }
 
+.publications__link {
+  margin-bottom: 5px;
+  padding-top: 30px;
+}
+
 .publications__title {
   font-size: 30px;
   line-height: 37px;
+  margin-bottom: 30px;
 }
 
 .publications__box {
@@ -753,6 +759,7 @@ a {
   background-color: #4400ff;
   height: 200px;
   width: 100%;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .publications__box-cart-desc {

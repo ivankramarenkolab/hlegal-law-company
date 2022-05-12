@@ -127,3 +127,11 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .solution {
+        &__box {
+            padding: 0 120px;
+        }
+    }
+}

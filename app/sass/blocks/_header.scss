@@ -127,3 +127,14 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .header {
+        &__wrap {
+            margin-bottom: 265px;
+        }
+        &__subtitle {
+            margin-bottom: 305px;
+        }
+    }
+}

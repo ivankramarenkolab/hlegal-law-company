@@ -63,9 +63,6 @@
             &-desc {
                 width: 61%;
                 padding: 30px;
-                &-text {
-
-                }
                 &-name {
                     &-position {
                         margin-bottom: 0;
@@ -78,6 +75,21 @@
                 &-img {
                     height: 528px;
                     border-radius: 12px 0 0 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .slider {
+        &__box {
+            &-desc {
+                width: 71%;
+            }
+            &-pic {
+                &-img {
+                    height: 344px;
                 }
             }
         }

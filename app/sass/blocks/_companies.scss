@@ -73,3 +73,12 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .companies {
+        &__box {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+    }
+}

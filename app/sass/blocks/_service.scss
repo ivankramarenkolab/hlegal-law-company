@@ -101,3 +101,12 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .service {
+        &-wrap {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+        }
+    }
+}

@@ -94,3 +94,36 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .solution {
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            &-subject {
+                margin: 0 60px 0 0;
+                padding-right: 60px;
+                border-right: 4px solid rgba(255, 255, 255, 0.3);;
+                flex-direction: column;
+                overflow: inherit;
+                align-items: flex-end;
+                justify-content: space-around;
+                &-blur {
+                    display: none;
+                }
+                &-link:not(:last-child) {
+                    margin-right: 0;
+                }
+                &-link:last-child {
+                    margin-right: 0;
+                }
+            }
+            &-border {
+                display: none;
+            }
+            &-info {
+                margin: 10px 0;
+            }
+        }
+    }
+}

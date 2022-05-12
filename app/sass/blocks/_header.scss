@@ -87,7 +87,7 @@
         }
         &__wrap {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, auto);
             grid-template-rows: repeat(3, auto);
             margin-bottom: 270px;
             padding-top: 50px;
@@ -103,6 +103,27 @@
         }
         &__subtitle {
             margin-bottom: 417px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        &__bg-img {
+            background-size: auto;
+        }
+        &__wrap {
+            margin-bottom: 250px;
+            &-menu {
+                &-logo {
+                    grid-row-start: 1;
+                    grid-row-end: 4;
+                    margin: 0;
+                }
+            }
+        }
+        &__subtitle {
+            margin-bottom: 290px;
         }
     }
 }

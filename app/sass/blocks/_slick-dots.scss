@@ -21,3 +21,9 @@
 .slick-dotted.slick-slider {
     margin-bottom: 105px;
 }
+
+@media screen and (min-width: 1024px) {
+    .slick-initialized .slick-slide {
+        display: flex;
+    }
+}

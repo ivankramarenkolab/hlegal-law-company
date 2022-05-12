@@ -56,3 +56,30 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .slider {
+        &__box {
+            &-desc {
+                width: 61%;
+                padding: 30px;
+                &-text {
+
+                }
+                &-name {
+                    &-position {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &-pic {
+                margin-bottom: 0;
+                max-height: 528px;
+                &-img {
+                    height: 528px;
+                    border-radius: 12px 0 0 12px;
+                }
+            }
+        }
+    }
+}

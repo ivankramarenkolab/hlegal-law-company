@@ -62,9 +62,6 @@
         background: none;
         grid-column-start: -3;
         grid-column-end: -1;
-        &.show {
-
-        }
         &-list {
             transform: translateY(0%);
             flex-direction: inherit;

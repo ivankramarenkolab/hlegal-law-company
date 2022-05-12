@@ -10,7 +10,7 @@
     }
     &__box {
         background-color: #F48B30;
-        margin: 0 -15px;
+        margin: 0 -30px;
         &-bg {
             display: flex;
             justify-content: center;
@@ -56,6 +56,23 @@
         }
         &-bg:nth-child(n+7){
             display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .companies {
+        &__box {
+            margin: 0 -60px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            &-bg {
+
+            }
+            &-bg:nth-child(n+7){
+                display: flex;
+            }
         }
     }
 }

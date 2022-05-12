@@ -22,6 +22,8 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 37px;
     }
     &__box {
         padding-bottom: 30px;
@@ -72,6 +74,30 @@
                 line-height: 26px;
                 color: #FFFFFF;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .service {
+        &-title {
+            line-height: 46px;
+            margin-bottom: 60px;
+            font-size: 38px;
+        }
+        &__box {
+            padding-bottom: 0;
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+        &-wrap {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 60px;
+            grid-row-gap: 60px;
+            padding-bottom: 30px;
         }
     }
 }

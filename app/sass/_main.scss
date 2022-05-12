@@ -11,7 +11,7 @@ ul {
 body {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-weight: 700;
-    min-width: 345px;
+    min-width: 375px;
 }
 
 .stop-scroll {
@@ -21,9 +21,9 @@ body {
 
 .container {
     max-width: 1440px;
-    min-width: 345px;
+    min-width: 375px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 
 a {
@@ -45,4 +45,10 @@ a {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 60px;
+    }
 }

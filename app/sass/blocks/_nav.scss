@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     background: rgba(245, 245, 250, 0.2);
-    margin: 0 -15px;
+    margin: 0 -30px;
     padding: 10px 15px;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -57,6 +57,7 @@
         margin: 0;
         background: none;
         padding: 0 0 30px;
+        justify-content: flex-start;
         &__lang {
             &-list {
                 &-item {
@@ -82,13 +83,32 @@
             }
         }
         &__address {
-            display: block;
+            display: flex;
+            font-weight: 400;
+            line-height: 20px;
+            color: #B3B3BA;
+            align-items: center;
+        }
+        &__address::after,
+        &__address::before,
+        &__tel::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #E6E6F0;
+            border-radius: 50%;
+            margin: 0 6px;
         }
         &__tel {
-
+            display: flex;
+            align-items: center;
         }
         &__facebook {
             display: block;
+            filter: brightness(0) saturate(100%) invert(98%) sepia(11%) saturate(147%) hue-rotate(166deg) brightness(117%) contrast(100%);
+        }
+        &__facebook:hover {
+            filter: invert(31%) sepia(100%) saturate(6241%) hue-rotate(331deg) brightness(94%) contrast(99%);
         }
     }
 }

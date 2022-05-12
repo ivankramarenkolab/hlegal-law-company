@@ -3,7 +3,7 @@
         background-color: #F5F5FA;
         border-radius: 12px;
         &-pic {
-            max-width: 500px;
+            max-height: 500px;
             background-color: #EDEDF7;
             margin-bottom: 30px;
             &-img {
@@ -38,6 +38,19 @@
                     line-height: 22px;
                     color: #B3B3BA;
                     margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .slider {
+        &__box {
+            &-desc {
+                &-text {
+                    font-size: 38px;
+                    line-height: 46px;
                 }
             }
         }

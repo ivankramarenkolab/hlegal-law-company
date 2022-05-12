@@ -6,14 +6,14 @@
             display: flex;
             overflow: auto;
             -ms-overflow-style: none;
-            margin: 0 -15px 5px 0;
+            margin: 0 -30px 5px 0;
             &::-webkit-scrollbar {
                 width: 0;
             }
             &-link {
                 white-space: nowrap;
                 font-size: 38px;
-                line-height: 46px;
+                line-height: 37px;
                 color: #B3B3BA;
                 border: 0;
                 cursor: pointer;
@@ -29,10 +29,10 @@
             &-blur {
                 background-image: url(../img/home-page/right-blur.png);
                 position: absolute;
-                top: 2px;
-                right: -15px;
+                top: -4px;
+                right: -30px;
                 width: 50px;
-                height: 41px;
+                height: 50px;
             }
         }
         &-border {
@@ -65,5 +65,32 @@
 .business-text {
     &.visible {
         display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .solution {
+        &__box {
+            margin-bottom: 60px;
+            &-subject {
+                margin: 0 -60px 35px 0;
+                &-blur {
+                    right: -60px;
+                }
+                &-link {
+                    font-size: 38px;
+                    }
+                }
+            &-border {
+                margin-bottom: 60px;
+            }
+            &-info {
+                display: none;
+                &-title {
+                    font-size: 30px;
+                    line-height: 37px;
+                }
+            }
+        }
     }
 }

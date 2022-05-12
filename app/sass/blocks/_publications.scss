@@ -20,6 +20,7 @@
                 height: 200px;
                 width: 100%;
                 border-radius: 8px 8px 0px 0px;
+                object-fit: cover;
             }
             &-desc {
                 padding: 30px;
@@ -50,3 +51,19 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .publications {
+        &__box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 30px;
+            &-cart:last-child {
+                grid-column-start: -3;
+                grid-column-end: -1;
+            }
+        }
+    }
+}
+

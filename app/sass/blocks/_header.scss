@@ -18,6 +18,7 @@
             grid-column-start: -3;
             grid-column-end: -2;
             margin: 15px 0;
+            margin-left: -15px;
             &-img {
                 height: 32px;
             }
@@ -84,12 +85,12 @@
         border-radius: 0px 0px 12px 12px;
         margin-bottom: 50px;
         &__bg-img {
-            
+            margin-bottom: 60px;
         }
         &__wrap {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, auto);
+            grid-template-rows: repeat(3, auto);
             margin-bottom: 270px;
             padding-top: 50px;
             &-menu-logo {
@@ -101,6 +102,9 @@
             &-icon-menu {
 
             }
+        }
+        &__subtitle {
+            margin-bottom: 417px;
         }
     }
 }

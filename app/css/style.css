@@ -76,7 +76,7 @@ a {
 .header__bg-img {
   background-image: url(../img/home-page/big-banner.svg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
   margin-bottom: 30px;
   background-size: cover;
 }
@@ -594,14 +594,26 @@ a {
     margin-bottom: 0;
     width: auto;
     margin-right: 15px;
+    border-radius: 0;
+    padding-bottom: 4px;
   }
   .header__menu-list-item:last-child {
     margin-bottom: 0;
+  }
+  .header__menu-list-item:hover {
+    border-bottom: 2px solid #F0145A;
+    padding-bottom: 2px;
+  }
+  .header__menu-list-item:active {
+    background: none;
   }
   .header__menu-list-link {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+  }
+  .header__menu-list-link:active {
+    color: #F0145A;
   }
 }
 

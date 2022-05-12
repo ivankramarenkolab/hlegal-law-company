@@ -74,14 +74,26 @@
                 margin-bottom: 0;
                 width: auto;
                 margin-right: 15px;
+                border-radius: 0;
+                padding-bottom: 4px;
             }
             &-item:last-child {
                 margin-bottom: 0;
+            }
+            &-item:hover {
+                border-bottom: 2px solid #F0145A;
+                padding-bottom: 2px;
+            }
+            &-item:active {
+                background: none;
             }
             &-link {
                 font-size: 16px;
                 line-height: 20px;
                 color: #FFFFFF;
+            }
+            &-link:active {
+                color: #F0145A;
             }
         }
     }

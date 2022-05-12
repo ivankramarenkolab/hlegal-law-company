@@ -58,30 +58,6 @@
         background: none;
         padding: 0 0 30px;
         justify-content: flex-start;
-        &__lang {
-            &-list {
-                &-item {
-
-                }
-                &-link {
-                    &--active {
-
-                        }
-                    &--dark {
-
-                    }
-                    &--dark:hover {
-
-                    }
-                    &--white {
-
-                    }
-                    &--white:hover {
-
-                    }
-                }
-            }
-        }
         &__address {
             display: flex;
             font-weight: 400;

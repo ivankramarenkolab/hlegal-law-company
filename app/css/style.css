@@ -178,9 +178,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .header {
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    border-radius: 0px 0px 12px 12px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
   .header__bg-img {
     margin-bottom: 60px;
@@ -197,6 +195,9 @@ a {
   }
   .header__wrap-menu-logo-img {
     height: 60px;
+  }
+  .header__wrap-icon-menu {
+    display: none;
   }
   .header__subtitle {
     margin-bottom: 417px;
@@ -649,9 +650,6 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .icon__menu {
-    display: none;
-  }
   .close-icon__menu {
     display: none;
   }
@@ -878,10 +876,10 @@ a {
   .service-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-column-gap: 60px;
     grid-row-gap: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1131,7 +1129,7 @@ a {
   .publications__box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     grid-column-gap: 30px;
   }
   .publications__box-cart:last-child {

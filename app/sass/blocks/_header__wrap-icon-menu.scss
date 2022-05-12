@@ -57,35 +57,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .icon__menu {
-        display: none;
-        &:active {
-
-        }
-        &::after,
-        &::before {
-
-        }
-        &-span {
-
-        }
-    }
-    
     .close-icon__menu {
         display: none;
-        &::after,
-        &::before {
-
-        }
-        &::before {
-
-        }
-        &::after {
-
-        }
-        &:hover,
-        &:active {
-
-        }
     }
 }

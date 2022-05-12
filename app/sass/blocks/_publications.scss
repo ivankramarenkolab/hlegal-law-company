@@ -57,7 +57,7 @@
         &__box {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
             grid-column-gap: 30px;
             &-cart:last-child {
                 grid-column-start: -3;

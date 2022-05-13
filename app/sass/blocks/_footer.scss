@@ -1,5 +1,5 @@
 .footer {
-    background-color: #F5F5FA;
+    background-color: $footer-bg;
     &__wrap {
         text-align: center;
         padding: 30px 0;
@@ -9,7 +9,7 @@
         &-text {
             font-weight: 400;
             line-height: 20px;
-            color: #323264;
+            color: $footer__address-text;
             margin-bottom: 10px;
         }
     }
@@ -21,7 +21,7 @@
         &-tel {
             margin-bottom: 10px;
             &-link {
-                color: #46466E;
+                color: $footer__contact-tel-link;
                 line-height: 20px;
             }
         }
@@ -29,7 +29,7 @@
     &__law {
         font-weight: 400;
         line-height: 20px;
-        color: #B3B3BA;
+        color: $footer__law;
     }
 }
 
@@ -71,7 +71,7 @@
                 content: '';
                 width: 6px;
                 height: 6px;
-                background: #B3B3BA;
+                background: $footer__address-text-after;
                 border-radius: 50%;
                 margin: 0 10px;
             }
@@ -96,7 +96,7 @@
                 content: '';
                 width: 6px;
                 height: 6px;
-                background: #B3B3BA;
+                background: $footer__tel-after-before;
                 border-radius: 50%;
                 margin: 0 10px;
             }

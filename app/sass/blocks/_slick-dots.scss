@@ -4,17 +4,17 @@
 
 .slick-dots li button:before {
     font-size: 16px;
-    color: #24A3FF;
+    color: $link;
     opacity: 0.2;
 }
 
 .slick-dots li.slick-active button:before {
-    color: #24A3FF;
+    color: $link;
     opacity: 1;
 }
 
 .slick-dots li button:hover {
-    color: #24A3FF;
+    color: $link;
     opacity: 0.6;
 }
 

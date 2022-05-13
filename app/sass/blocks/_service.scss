@@ -14,11 +14,11 @@
             font-size: 14px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            color: #24A3FF;
+            color: $link;
         }
     }
     &-title {
-        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        background: $gradient;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: 30px;
@@ -35,7 +35,7 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 30px;
-            background: #FFFFFF;
+            background: $service__box-pic-bg;
             border-radius: 24px;
             width: 92px;
             height: 92px;
@@ -66,13 +66,13 @@
             &-title {
                 font-size: 22px;
                 line-height: 27px;
-                color: #24A3FF;
+                color: $service__box-desc-title;
                 margin-bottom: 15px;
             }
             &-text {
                 font-weight: 400;
                 line-height: 26px;
-                color: #FFFFFF;
+                color: $text;
             }
         }
     }

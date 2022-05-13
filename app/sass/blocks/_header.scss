@@ -33,7 +33,7 @@
         font-size: 38px;
         line-height: 46px;
         text-align: center;
-        color: #FFFFFF;
+        color: $text;
         margin-bottom: 159px;
     }
     &__arrow-down {
@@ -43,7 +43,7 @@
         &-border {
             width: 42px;
             height: 42px;
-            border: 2px solid rgba(255, 255, 255, 0.5);
+            border: 2px solid $header__arrow-down-border;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -58,7 +58,7 @@
         position: relative;
         &::after {
             content: '';
-            background-color: #CACADB;
+            background-color: $header__shadow-after-bg;
             height: 10px;
             border-radius: 0px 0px 12px 12px;
             position: absolute;
@@ -68,7 +68,7 @@
         }
         &::before {
             content: '';
-            background-color: #E7E7F2;
+            background-color: $header__shadow-before-bg;
             height: 10px;
             border-radius: 0px 0px 12px 12px;
             position: absolute;
@@ -89,7 +89,7 @@
             display: grid;
             grid-template-columns: repeat(2, auto);
             grid-template-rows: repeat(3, auto);
-            margin-bottom: 270px;
+            margin-bottom: 269px;
             padding-top: 50px;
             &-menu-logo {
                 margin: 0 0 30px;
@@ -113,7 +113,7 @@
             background-size: auto;
         }
         &__wrap {
-            margin-bottom: 250px;
+            margin-bottom: 245px;
             &-menu {
                 &-logo {
                     grid-row-start: 1;
@@ -131,7 +131,7 @@
 @media screen and (min-width: 1440px) {
     .header {
         &__wrap {
-            margin-bottom: 265px;
+            margin-bottom: 261px;
         }
         &__subtitle {
             margin-bottom: 305px;

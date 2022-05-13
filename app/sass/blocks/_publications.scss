@@ -1,5 +1,5 @@
 .publications {
-    background-color: #F5F5FA;
+    background-color: $publications-bg;
     &__link {
         margin-bottom: 5px;
         padding-top: 30px;
@@ -10,13 +10,13 @@
         margin-bottom: 30px;
     }
     &__box {
-        border-bottom: 2px solid #E6E6F0;
+        border-bottom: 2px solid $publications__box-border;
         &-cart {
             border-radius: 8px;
-            background: #FFFFFF;
+            background: $publications__box-cart-bg;
             margin-bottom: 30px;
             &-img {
-                background-color:rgb(68, 0, 255);
+                background-color: $publications__box-cart-img-bg;
                 height: 200px;
                 width: 100%;
                 border-radius: 8px 8px 0px 0px;
@@ -28,7 +28,7 @@
                     margin-bottom: 15px;
                     &-link {
                         line-height: 20px;
-                        color: #24A3FF;
+                        color: $link;
                     }
                 }
                 &-date {
@@ -37,7 +37,7 @@
                     letter-spacing: 1px;
                     text-transform: uppercase;
                     color: #B3B3BA;
-                    border-bottom: 4px solid #E6E6F0;
+                    border-bottom: 4px solid $publications__box-cart-desc-date-border;
                     padding-bottom: 15px;
                     margin-bottom: 15px;
                 }

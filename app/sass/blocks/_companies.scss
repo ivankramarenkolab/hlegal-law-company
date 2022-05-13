@@ -4,12 +4,12 @@
         line-height: 17px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #323264;
+        color: $companies-title;
         text-align: center;
         margin-bottom: 30px;
     }
     &__box {
-        background-color: #F48B30;
+        background-color: $companies__box-bgc;
         margin: 0 -30px;
         &-bg {
             display: flex;
@@ -19,40 +19,40 @@
             height: 120px;
         }
         &-bg:nth-child(1) {
-            background-color: #1C4280;
+            background-color: $companies__box-bg-1;
         }
         &-bg:nth-child(2) {
-            background-color: #143646;
+            background-color: $companies__box-bg-2;
         }
         &-bg:nth-child(3) {
-            background-color: #F48B30;
+            background-color: $companies__box-bg-3;
         }
         &-bg:nth-child(4) {
-            background-color: #9E4DC3;
+            background-color: $companies__box-bg-4;
         }
         &-bg:nth-child(5) {
-            background-color: #FD9339;
+            background-color: $companies__box-bg-5;
         }
         &-bg:nth-child(6) {
-            background-color: #E2E2E4;
+            background-color: $companies__box-bg-6;
         }
         &-bg:nth-child(7) {
-            background-color: #C71C36;
+            background-color: $companies__box-bg-7;
         }
         &-bg:nth-child(8) {
-            background-color: #DCF3F9;
+            background-color: $companies__box-bg-8;
         }
         &-bg:nth-child(9) {
-            background-color: #EAEAEA;
+            background-color: $companies__box-bg-9;
         }
         &-bg:nth-child(10) {
-            background-color: #282240;
+            background-color: $companies__box-bg-10;
         }
         &-bg:nth-child(11) {
-            background-color: #1D4568;
+            background-color: $companies__box-bg-11;
         }
         &-bg:nth-child(12) {
-            background-color: #000000;
+            background-color: $companies__box-bg-12;
         }
         &-bg:nth-child(n+7){
             display: none;

@@ -7,18 +7,18 @@
     align-items: center;
     margin-right: -15px;
     &:active {
-        background-color: #E6E6F0;
+        background-color: $icon__menu-active-bg;
         border-radius: 8px;
     }
     &::after,
     &::before {
         content: "";
-        background-color: #FFFFFF;
+        background-color: $icon__menu-after-before-bg;
         height: 2px;
         width: 18px;
     }
     &-span {
-        background-color: #FFFFFF;
+        background-color: $icon__menu-span-bg;
         height: 2px;
         width: 18px;
         margin: 5px 0;
@@ -38,7 +38,7 @@
     &::after,
     &::before {
         content: "";
-        background-color: #EC6F5D;
+        background-color: $close-icon__menu-after-before-bg;
         height: 2px;
         width: 75%;
         position: absolute;
@@ -51,7 +51,7 @@
     }
     &:hover,
     &:active {
-        background: #E6E6F0;
+        background: $close-icon__menu-hover-active-bg;
         border-radius: 8px;
     }
 }

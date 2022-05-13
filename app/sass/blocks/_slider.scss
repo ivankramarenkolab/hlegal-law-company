@@ -1,10 +1,10 @@
 .slider {
     &__box {
-        background-color: #F5F5FA;
+        background-color: $slider__box-bg;
         border-radius: 12px;
         &-pic {
             max-height: 500px;
-            background-color: #EDEDF7;
+            background-color: $slider__box-pic-bg;
             margin-bottom: 30px;
             &-img {
                 width: 100%;
@@ -21,7 +21,7 @@
             &-text {
                 font-size: 30px;
                 line-height: 37px;
-                background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+                background: $gradient;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
                 margin-bottom: 30px;
@@ -29,14 +29,14 @@
             &-name {
                 &-who {
                     line-height: 20px;
-                    color: #B3B3BA;
+                    color: $slider__box-desc-name-who;
                     margin-bottom: 6px;
                 }
                 &-position {
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 22px;
-                    color: #B3B3BA;
+                    color: $slider__box-desc-name-position;
                     margin-bottom: 30px;
                 }
             }

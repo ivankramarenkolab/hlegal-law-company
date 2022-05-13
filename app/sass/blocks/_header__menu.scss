@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #707093;
+    background-color: $header__menu-bg;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -18,7 +18,7 @@
         visibility: visible;
     }
     &-list {
-        background-color: #FFFFFF;
+        background-color: $header__menu-list-bg;
         width: 100%;
         border-radius: 12px 12px 0px 0px;
         margin: 0 8px;
@@ -33,7 +33,7 @@
             transform: translateY(0%);
         }
         &-item {
-            background-color: #F5F5FA;
+            background-color: $header__menu-list-item-bg;
             width: 100%;
             border-radius: 12px;
             text-align: center;
@@ -44,12 +44,12 @@
             margin-bottom: 12px;
         }
         &-item:active {
-            background-color: #E6E6F0;
+            background-color: $header__menu-list-item-active-bg;
         }
         &-link {
             font-size: 24px;
             line-height: 29px;
-            color: #24A3FF;
+            color: $link;
         }
     }
 }
@@ -75,14 +75,15 @@
                 width: auto;
                 margin-right: 15px;
                 border-radius: 0;
-                padding-bottom: 4px;
+                padding-bottom: 5px;
+                transition: border 0.3s;
             }
             &-item:last-child {
                 margin-bottom: 0;
             }
             &-item:hover {
-                border-bottom: 2px solid #F0145A;
-                padding-bottom: 2px;
+                border-bottom: 2px solid $hover;
+                padding-bottom: 3px;
             }
             &-item:active {
                 background: none;
@@ -90,10 +91,10 @@
             &-link {
                 font-size: 16px;
                 line-height: 20px;
-                color: #FFFFFF;
+                color: $text;
             }
             &-link:active {
-                color: #F0145A;
+                color: $hover;
             }
         }
     }

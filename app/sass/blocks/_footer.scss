@@ -66,14 +66,14 @@
                 align-items: center;
                 margin-bottom: 0;
                 line-height: inherit;
-            }
-            &-text::after {
-                content: '';
-                width: 6px;
-                height: 6px;
-                background: $footer__address-text-after;
-                border-radius: 50%;
-                margin: 0 10px;
+                &::after {
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background: $footer__address-text-after;
+                    border-radius: 50%;
+                    margin: 0 10px;
+                }
             }
             &-link {
                 margin-bottom: 1px;
@@ -87,18 +87,18 @@
                 display: flex;
                 align-items: center;
                 margin-bottom: 0;
+                &::after,
+                &::before {
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background: $footer__tel-after-before;
+                    border-radius: 50%;
+                    margin: 0 10px;
+                }
                 &-link {
                     line-height: inherit;
                 }
-            }
-            &-tel::after,
-            &-tel::before {
-                content: '';
-                width: 6px;
-                height: 6px;
-                background: $footer__tel-after-before;
-                border-radius: 50%;
-                margin: 0 10px;
             }
             &-email {
                 margin-bottom: 1px;

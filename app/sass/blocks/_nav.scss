@@ -28,6 +28,7 @@
                     color: $nav__lang-list-link--dark;
                 }
                 &--dark:hover {
+                    transition: background-color 0.3s;
                     background-color: $nav__lang-list-link--dark-hover-bg;
                 }
                 &--white {
@@ -91,6 +92,7 @@
             filter: brightness(0) saturate(100%) invert(98%) sepia(11%) saturate(147%) hue-rotate(166deg) brightness(117%) contrast(100%);
         }
         &__facebook:hover {
+            transition: all 0.3s;
             filter: invert(31%) sepia(100%) saturate(6241%) hue-rotate(331deg) brightness(94%) contrast(99%);
         }
     }

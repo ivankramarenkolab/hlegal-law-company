@@ -276,6 +276,8 @@ a {
 }
 
 .nav__lang-list-link--dark:hover {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -351,6 +353,8 @@ a {
             filter: brightness(0) saturate(100%) invert(98%) sepia(11%) saturate(147%) hue-rotate(166deg) brightness(117%) contrast(100%);
   }
   .nav__facebook:hover {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     -webkit-filter: invert(31%) sepia(100%) saturate(6241%) hue-rotate(331deg) brightness(94%) contrast(99%);
             filter: invert(31%) sepia(100%) saturate(6241%) hue-rotate(331deg) brightness(94%) contrast(99%);
   }

@@ -123,6 +123,10 @@ a {
           justify-content: flex-end;
 }
 
+.header__wrap--about {
+  margin-bottom: 30px;
+}
+
 .header__subtitle {
   font-size: 38px;
   line-height: 46px;

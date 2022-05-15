@@ -37,6 +37,7 @@
                     color: $nav__lang-list-link--white;
                 }
                 &--white:hover {
+                    transition: background-color 0.3s;
                     background-color: $nav__lang-list-link--white-hover-bg;
                 }
             }
@@ -48,10 +49,16 @@
     &__tel {
         line-height: 20px;
         color: $nav__tel;
+        &--white {
+            color: $nav__tel--white;
+        }
     }
     &__facebook {
         height: 24px;
         display: none;
+    }
+    &--white {
+        background: $nav-bg--white;
     }
 }
 
@@ -92,10 +99,13 @@
         &__facebook {
             display: block;
             filter: brightness(0) saturate(100%) invert(98%) sepia(11%) saturate(147%) hue-rotate(166deg) brightness(117%) contrast(100%);
-        }
-        &__facebook:hover {
-            transition: all 0.3s;
-            filter: invert(31%) sepia(100%) saturate(6241%) hue-rotate(331deg) brightness(94%) contrast(99%);
+            &:hover {
+                transition: all 0.3s;
+                filter: invert(31%) sepia(100%) saturate(6241%) hue-rotate(331deg) brightness(94%) contrast(99%);
+            }
+            &--white {
+                filter: brightness(0) saturate(100%) invert(85%) sepia(7%) saturate(189%) hue-rotate(201deg) brightness(85%) contrast(88%);
+            }
         }
     }
 }

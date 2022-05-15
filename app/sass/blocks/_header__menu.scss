@@ -51,6 +51,11 @@
             font-size: 24px;
             line-height: 29px;
             color: $link;
+            &--active {
+                border-bottom: 2px solid $hover;
+                padding-bottom: 3px;
+                color: $hover;
+            }
         }
     }
 }
@@ -88,12 +93,23 @@
                 &:active {
                     background: none;
                 }
+                &--white {
+                    &:hover {
+                        border-bottom: 2px solid $link;
+                    }
+                }
             }
             &-link {
                 font-size: 16px;
                 line-height: 20px;
                 color: $text;
                 &:active {
+                    color: $hover;
+                }
+                &--white {
+                    color: $link;
+                }
+                &--active {
                     color: $hover;
                 }
             }

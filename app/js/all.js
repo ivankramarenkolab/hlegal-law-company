@@ -5,7 +5,7 @@
 
         // <!-- Burger menu -->
 var menu = document.querySelector('.header__menu');
-var burger = document.querySelector('.header__wrap-icon-menu');
+var burger = document.querySelector('.icon__menu');
 var overlay = document.querySelector('.header__menu-list');
 var closeicon = document.querySelector('.close-icon__menu');
 var body = document.querySelector('body');
@@ -87,7 +87,7 @@ business.addEventListener('click', () => {
     business.classList.add('solution__box-subject-link--active');
 });
 
-        // <!-- Slider -->
+        // <!-- Slider Home page -->
 $('.slider').slick({
     dots: true,
     infinite: true,

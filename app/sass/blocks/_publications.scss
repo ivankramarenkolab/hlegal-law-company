@@ -59,9 +59,20 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, auto);
             grid-column-gap: 30px;
-            &-cart:last-child {
-                grid-column-start: -3;
-                grid-column-end: -1;
+            &-cart {
+                &:last-child {
+                    grid-column-start: -3;
+                    grid-column-end: -1;
+                }
+                &-desc {
+                    &-title {
+                        &-link {
+                            &:hover {
+                                color: $hover;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -72,9 +83,11 @@
         &__box {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(1, auto);
-            &-cart:last-child {
-                grid-column-start: -2;
-                grid-column-end: -1;
+            &-cart {
+                &:last-child {
+                    grid-column-start: -2;
+                    grid-column-end: -1;
+                }
             }
         }
     }

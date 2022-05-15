@@ -25,6 +25,13 @@
                 line-height: 20px;
             }
         }
+        &-email {
+            &-link {
+                &:hover {
+                    color: $hover;
+                }
+            }
+        }
     }
     &__law {
         font-weight: 400;
@@ -41,17 +48,6 @@
             grid-template-columns: repeat(2, auto);
             grid-template-rows: repeat(2, auto);
             grid-row-gap: 20px;
-        }
-        &__contact {
-            grid-column-start: -3;
-            margin-bottom: 0;
-            grid-column-end: -1;
-        }
-        &__law {
-            grid-column-start: -2;
-            grid-column-end: -1;
-            grid-row-start: 1;
-            grid-row-end: 2;
         }
         &__address,
         &__contact,
@@ -77,11 +73,26 @@
             }
             &-link {
                 margin-bottom: 1px;
+                &-item {
+                    &:hover {
+                        color: $hover;
+                    }
+                }
             }
         }
         &__contact {
+            grid-column-start: -3;
+            margin-bottom: 0;
+            grid-column-end: -1;
             &-facebook {
                 margin-bottom: 0;
+                &-link {
+                    &-img {
+                        &:hover {
+                            filter: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(4537%) hue-rotate(332deg) brightness(96%) contrast(97%);
+                        }
+                    }
+                }
             }
             &-tel {
                 display: flex;
@@ -102,9 +113,18 @@
             }
             &-email {
                 margin-bottom: 1px;
+                &-link {
+                    &:hover {
+                        color: $hover;
+                    }
+                }
             }
         }
         &__law {
+            grid-column-start: -2;
+            grid-column-end: -1;
+            grid-row-start: 1;
+            grid-row-end: 2;
             line-height: inherit;
             justify-content: flex-end;
         }

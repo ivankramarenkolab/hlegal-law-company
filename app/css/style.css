@@ -80,8 +80,7 @@ a {
 .header__wrap-menu-logo {
   grid-column-start: -3;
   grid-column-end: -2;
-  margin: 15px 0;
-  margin-left: -15px;
+  margin: 15px 0 10px -15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +98,7 @@ a {
 
 .header__wrap-menu-logo-wrap::after {
   content: '';
-  background-image: url(../../img/menu-img/menu-logo-slash-mini.svg);
+  background-image: url(../img/menu-img/menu-logo-slash-mini.svg);
   width: 12px;
   height: 26px;
   margin: 0 4px;

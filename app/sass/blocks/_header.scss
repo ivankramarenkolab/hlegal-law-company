@@ -107,7 +107,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     .header {
         &__bg-img {
             background-size: auto;
@@ -128,7 +128,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .header {
         &__wrap {
             margin-bottom: 261px;

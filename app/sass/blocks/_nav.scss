@@ -10,6 +10,8 @@
     &__lang {
         &-list {
             display: flex;
+            list-style: none;
+            padding: 0;
             &-item {
                 padding: 5px 0;
                 font-size: 12px;
@@ -98,7 +100,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     .nav {
         grid-column-start: 2;
         justify-content: flex-end;

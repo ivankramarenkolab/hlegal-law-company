@@ -63,7 +63,6 @@
 @media screen and (min-width: 768px) {
     .companies {
         &__box {
-            margin: 0 -60px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(4, 1fr);
@@ -76,7 +75,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     .companies {
         &__box {
             grid-template-columns: repeat(4, 1fr);

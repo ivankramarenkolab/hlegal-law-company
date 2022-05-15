@@ -6,6 +6,7 @@
             max-height: 500px;
             background-color: $slider__box-pic-bg;
             margin-bottom: 30px;
+            width: 100%;
             &-img {
                 width: 100%;
                 height: 500px;
@@ -57,11 +58,10 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     .slider {
         &__box {
             &-desc {
-                width: 61%;
                 padding: 30px;
                 &-name {
                     &-position {
@@ -81,12 +81,9 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .slider {
         &__box {
-            &-desc {
-                width: 71%;
-            }
             &-pic {
                 &-img {
                     height: 344px;

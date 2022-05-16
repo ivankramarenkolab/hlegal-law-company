@@ -5,8 +5,19 @@ $('.slider__about-wrap-box').slick({
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true,
-    arrows: false
-    });
+    arrows: false,
+    mobileFirst: true,
+    responsive: [
+        {
+        breakpoint: 767,
+        settings: {
+            slidesToShow: 4,
+            infinite: true,
+            dots: true,
+        }
+    }
+]
+});
     
 // <!-- Burger menu -->
 var menu = document.querySelector('.header__menu');

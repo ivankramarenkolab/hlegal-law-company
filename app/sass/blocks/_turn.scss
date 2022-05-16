@@ -1,0 +1,50 @@
+.turn {
+    &__box {
+        &-desc {
+            margin-bottom: 30px;
+            &-title {
+                font-size: 30px;
+                line-height: 37px;
+                background: $gradient;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 28px;
+            }
+            &-text {
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 30px;
+                color: #000000;
+            }
+        }
+        &-wrap {
+            padding-left: 30px;
+            margin-bottom: 30px;
+            border-left: 4px solid #E6E6F0;
+            &-statistics {
+                &:not(:last-child) {
+                    margin-bottom: 40px;
+                }
+                &-numbers {
+                    display: flex;
+                    margin-bottom: 10px;
+                    &-text {
+                        font-size: 36px;
+                        line-height: 44px;
+                        background: $gradient;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    &-img {
+                        margin-right: 12px;
+                    }
+                }
+                &-text {
+                    font-weight: 400;
+                    line-height: 20px;
+                    color: #323264;
+                }
+            }
+        }
+    }
+}

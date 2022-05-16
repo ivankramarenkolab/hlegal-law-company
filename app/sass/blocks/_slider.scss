@@ -1,4 +1,7 @@
 .slider {
+    &-wrap {
+        margin-bottom: 105px;
+    }
     &__box {
         background-color: $slider__box-bg;
         border-radius: 12px;

@@ -1,4 +1,14 @@
-        // <!-- Burger menu -->
+        // <!-- Slider About page -->
+$('.slider__about-wrap-box').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows: false
+    });
+    
+// <!-- Burger menu -->
 var menu = document.querySelector('.header__menu');
 var burger = document.querySelector('.icon__menu');
 var overlay = document.querySelector('.header__menu-list');
@@ -91,4 +101,3 @@ $('.slider').slick({
     adaptiveHeight: true,
     arrows: false
     });
-    

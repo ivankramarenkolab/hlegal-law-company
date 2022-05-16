@@ -1,0 +1,27 @@
+.slider__about {
+    background-color: #F5F5FA;
+    &-wrap {
+        padding: 30px 0 43px 0;
+        border-bottom: 2px solid #E6E6F0;
+        &-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &-box {
+            margin-bottom: 30px;
+            &-content {
+                &-pic {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FFFFFF;
+                    height: 90px;
+                    border-radius: 12px;
+                    &-img {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -18,7 +18,7 @@ $('.slider__about-wrap-box').slick({
     }
 ]
 });
-    
+
 // <!-- Burger menu -->
 var menu = document.querySelector('.header__menu');
 var burger = document.querySelector('.icon__menu');

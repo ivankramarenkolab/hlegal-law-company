@@ -27,7 +27,8 @@
         "gulp-webp": "^4.0.1",
         "jquery": "^3.6.0",
         "postcss": "^8.2.8",
-        "slick-carousel": "^1.8.1"
+        "slick-carousel": "^1.8.1",
+        "uglify-js": "github:mishoo/UglifyJS2#harmony"
     },
     "scripts": {
         "stylelint": "stylelint \"app/sass/**/*.scss\" --syntax scss",

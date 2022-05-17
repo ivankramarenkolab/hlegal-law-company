@@ -35,3 +35,25 @@
         }
     }
 }
+
+@media screen and (min-width: 992px) {
+    .team {
+        &__pic {
+            &-text {
+                font-size: 86px;
+                line-height: 105px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        &__pic {
+            &-text {
+                font-size: 96px;
+                line-height: 117px;
+            }
+        }
+    }
+}

@@ -39,3 +39,21 @@
         }
     }
 }
+
+@media screen and (min-width: 992px) {
+    .slider__about {
+        &-wrap {
+            &-box {
+                &-content {
+                    &-pic {
+                        height: 110px;
+                        width: 100%;
+                        &-img {
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

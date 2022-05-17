@@ -71,18 +71,23 @@
             display: grid;
             grid-template-columns: repeat(2, auto);
             grid-template-rows: 1fr;
-            grid-column-gap: 20px;
+            grid-column-gap: 30px;
             margin-bottom: 60px;
             &-desc {
                 margin-bottom: 0;
-                &-title {
-
-                }
             }
             &-wrap {
                 width: 388px;
                 margin-bottom: 0px;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .turn {
+        &__box {
+            padding: 0 120px;
         }
     }
 }

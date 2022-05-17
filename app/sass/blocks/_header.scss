@@ -141,6 +141,9 @@
         &__subtitle {
             margin-bottom: 417px;
         }
+        &--white {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -172,6 +175,9 @@
     .header {
         &__wrap {
             margin-bottom: 261px;
+            &--about {
+                margin-bottom: 60px;
+            }
         }
         &__subtitle {
             margin-bottom: 305px;

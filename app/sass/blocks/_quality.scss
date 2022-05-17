@@ -28,3 +28,28 @@
         }
     }
 }
+
+@media screen and (min-width: 992px) {
+    .quality {
+        &__box {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: 1fr;
+            grid-column-gap: 60px;
+            &-text {
+                margin-bottom: 0;
+            }
+            &-title {
+                width: 362px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .quality {
+        &__box {
+            padding: 0 120px;
+        }
+    }
+}

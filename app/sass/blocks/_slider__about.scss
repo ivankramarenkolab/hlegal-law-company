@@ -1,8 +1,8 @@
 .slider__about {
-    background-color: #F5F5FA;
+    background-color: $slider__about-bg;
     &-wrap {
         padding: 30px 0 43px 0;
-        border-bottom: 2px solid #E6E6F0;
+        border-bottom: 2px solid $slider__about-wrap-border;
         &-title {
             text-align: center;
             margin-bottom: 30px;
@@ -15,7 +15,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: #FFFFFF;
+                    background-color: $slider__about-wrap-box-content-pic-bg;
                     height: 90px;
                     border-radius: 12px;
                     &-img {

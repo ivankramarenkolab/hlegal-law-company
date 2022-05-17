@@ -52,7 +52,6 @@
             line-height: 29px;
             color: $link;
             &--active {
-                border-bottom: 2px solid $hover;
                 padding-bottom: 3px;
                 color: $hover;
             }
@@ -110,6 +109,7 @@
                     color: $link;
                 }
                 &--active {
+                    border-bottom: 2px solid $hover;
                     color: $hover;
                 }
             }

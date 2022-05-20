@@ -10,6 +10,9 @@
             background-image: url(../img/services-page/right-arrow.svg);
             margin-left: 3px;
         }
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(4537%) hue-rotate(332deg) brightness(96%) contrast(97%);
+        }
         &-item {
             font-size: 14px;
             letter-spacing: 1px;
@@ -64,10 +67,15 @@
         }
         &-desc {
             &-title {
-                font-size: 22px;
-                line-height: 27px;
-                color: $service__box-desc-title;
                 margin-bottom: 15px;
+                &-link {
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: $service__box-desc-title-link;
+                    &:hover {
+                        color: $hover;
+                    }
+                }
             }
             &-text {
                 font-weight: 400;

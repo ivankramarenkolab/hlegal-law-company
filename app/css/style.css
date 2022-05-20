@@ -1049,6 +1049,11 @@ a {
   margin-left: 3px;
 }
 
+.service-link:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(4537%) hue-rotate(332deg) brightness(96%) contrast(97%);
+          filter: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(4537%) hue-rotate(332deg) brightness(96%) contrast(97%);
+}
+
 .service-link-item {
   font-size: 14px;
   letter-spacing: 1px;
@@ -1121,10 +1126,17 @@ a {
 }
 
 .service__box-desc-title {
+  margin-bottom: 15px;
+}
+
+.service__box-desc-title-link {
   font-size: 22px;
   line-height: 27px;
   color: #24A3FF;
-  margin-bottom: 15px;
+}
+
+.service__box-desc-title-link:hover {
+  color: #F0145A;
 }
 
 .service__box-desc-text {

@@ -111,6 +111,10 @@ a {
   color: #323264;
 }
 
+.header__wrap-menu-logo-page--white {
+  color: #FFFFFF;
+}
+
 .header__wrap-icon-menu {
   display: -webkit-box;
   display: -ms-flexbox;

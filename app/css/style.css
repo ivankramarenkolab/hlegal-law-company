@@ -2113,8 +2113,9 @@ a {
 }
 
 .contact__page-form-input--message {
-  padding-bottom: 130px;
+  min-height: 130px;
   margin-bottom: 30px;
+  resize: none;
 }
 
 .contact__page-form-input--phone {

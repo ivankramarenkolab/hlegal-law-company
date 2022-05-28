@@ -85,8 +85,9 @@
                 margin-bottom: 15px;
             }
             &--message {
-                padding-bottom: 130px;
+                min-height: 130px;
                 margin-bottom: 30px;
+                resize: none;
             }
             &--phone {
                 margin-bottom: 15px;

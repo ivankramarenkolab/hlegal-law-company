@@ -1928,7 +1928,7 @@ a {
 
 .switch__button-checkbox + .switch__button-label:before {
   content: "";
-  background: #fff;
+  background: #FFFFFF;
   height: 100%;
   width: 100%;
   position: absolute;

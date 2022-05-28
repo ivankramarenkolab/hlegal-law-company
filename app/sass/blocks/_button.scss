@@ -1,19 +1,19 @@
 .button {
     padding: 18px 30px;
-    background: #24A3FF;
-    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    background: $button-bg;
+    box-shadow: 0px 0px 20px $button-bs;
     border-radius: 12px;
     border: none;
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    color: #ffffff;
+    color: $button;
     line-height: 20px;
     cursor: pointer;
     &:hover {
-        background: #0085FF;
+        background: $button-bg-hover;
     }
     &:active {
-        background: #006CCF;
+        background: $button-bg-active;
     }
 }

@@ -1,0 +1,139 @@
+.contact__page {
+    &-container {
+        margin-bottom: 30px;
+        &-address {
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 30px;
+            color: $contact__page-container-address;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 4px solid $contact__page-container-address-border;
+        }
+        &-box {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 4px solid $contact__page-container-box-border;
+            &-tel {
+                font-weight: 400;
+                font-size: 21px;
+                line-height: 30px;
+                color: $contact__page-container-box-tel;
+                margin-bottom: 15px;
+            }
+            &-email {
+                &-link {
+                    font-weight: 400;
+                    font-size: 21px;
+                    line-height: 30px;
+                    color: $link;
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+            }
+        }
+        &-facebook {
+            display: inline-block;
+            &-link {
+                display: flex;
+                align-items: flex-end;
+                &:hover {
+                    filter: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(4537%) hue-rotate(332deg) brightness(96%) contrast(97%);
+                }
+                &-img {
+                    margin-right: 10px;
+                }
+                &-text {
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $contact__page-container-facebook-link-text;
+                }
+            }
+        }
+    }
+    &-form {
+        background: $contact__page-form-bg;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 30px;
+        &-title {
+            background: $gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 30px;
+            line-height: 37px;
+            margin-bottom: 30px;
+        }
+        &-input {
+            border: 1px solid $contact__page-form-input-border;
+            border-radius: 8px;
+            width: 100%;
+            padding: 15px;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: $contact__page-form-input-placeholder;
+            }
+            &:focus {
+                outline: 1px solid $contact__page-form-input-placeholder-focus;
+            }
+            &--name {
+                margin-bottom: 15px;
+            }
+            &--message {
+                padding-bottom: 130px;
+                margin-bottom: 30px;
+            }
+            &--phone {
+                margin-bottom: 15px;
+            }
+            &--email {
+                margin-bottom: 30px;
+            }
+            &--button {
+                border: none;
+                outline: none;
+            }
+        }
+        &-text {
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $contact__page-form-input-text;
+            margin-bottom: 15px;
+        }
+        &-button {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact__page {
+        &-container {
+            margin-bottom: 60px;
+        }
+        &-form {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contact__page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact__page {
+        padding: 0 120px;
+    }
+}

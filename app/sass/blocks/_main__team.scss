@@ -13,35 +13,35 @@
             &:not(:last-child) {
                 margin-bottom: 30px;
             }
-            &-pic {
-                margin-bottom: 15px;
-                &-img {
-                    background-color: $main__team-box-cart-pic-img-bg;
-                    border-radius: 12px;
-                    width: 100%;
+            &-link {
+                &:hover &-wrap-arrow-bg-img {
+                    filter: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(4537%) hue-rotate(332deg) brightness(96%) contrast(97%);
                 }
-            }
-            &-wrap {
-                display: flex;
-                justify-content: space-between;
-                &-desc {
-                    &-name {
-                        line-height: 20px;
-                        color: $main__team-box-cart-wrap-desc-name;
-                        margin-bottom: 5px;
-                    }
-                    &-position {
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 22px;
-                        color: $main__team-box-cart-wrap-desc-position;
+                &-pic {
+                    margin-bottom: 15px;
+                    &-img {
+                        background-color: $main__team-box-cart-pic-img-bg;
+                        border-radius: 12px;
+                        width: 100%;
                     }
                 }
-                &-arrow {
-                    &-link {
-                        &:hover &-bg-img{
-                            filter: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(4537%) hue-rotate(332deg) brightness(96%) contrast(97%);
+                &-wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    &-desc {
+                        &-name {
+                            line-height: 20px;
+                            color: $main__team-box-cart-wrap-desc-name;
+                            margin-bottom: 5px;
                         }
+                        &-position {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: $main__team-box-cart-wrap-desc-position;
+                        }
+                    }
+                    &-arrow {
                         &-bg {
                             width: 32px;
                             height: 32px;
@@ -73,11 +73,13 @@
                 &:not(:last-child) {
                     margin-bottom: 0;
                 }
-                &-pic {
-                    &-img {
-                        width: 100%;
-                        height: 400px;
-                        object-fit: cover;
+                &-link {
+                    &-pic {
+                        &-img {
+                            width: 100%;
+                            height: 400px;
+                            object-fit: cover;
+                        }
                     }
                 }
             }
@@ -100,9 +102,11 @@
     .main__team {
         &-box {
             &-cart {
-                &-pic {
-                    &-img {
-                        height: auto;
+                &-link {
+                    &-pic {
+                        &-img {
+                            height: auto;
+                        }
                     }
                 }
             }

@@ -1754,17 +1754,22 @@ a {
   margin-bottom: 30px;
 }
 
-.main__team-box-cart-pic {
+.main__team-box-cart-link:hover .main__team-box-cart-link-wrap-arrow-bg-img {
+  -webkit-filter: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(4537%) hue-rotate(332deg) brightness(96%) contrast(97%);
+          filter: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(4537%) hue-rotate(332deg) brightness(96%) contrast(97%);
+}
+
+.main__team-box-cart-link-pic {
   margin-bottom: 15px;
 }
 
-.main__team-box-cart-pic-img {
+.main__team-box-cart-link-pic-img {
   background-color: #18a1b9;
   border-radius: 12px;
   width: 100%;
 }
 
-.main__team-box-cart-wrap {
+.main__team-box-cart-link-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1773,25 +1778,20 @@ a {
           justify-content: space-between;
 }
 
-.main__team-box-cart-wrap-desc-name {
+.main__team-box-cart-link-wrap-desc-name {
   line-height: 20px;
   color: #323264;
   margin-bottom: 5px;
 }
 
-.main__team-box-cart-wrap-desc-position {
+.main__team-box-cart-link-wrap-desc-position {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #B3B3BA;
 }
 
-.main__team-box-cart-wrap-arrow-link:hover .main__team-box-cart-wrap-arrow-link-bg-img {
-  -webkit-filter: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(4537%) hue-rotate(332deg) brightness(96%) contrast(97%);
-          filter: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(4537%) hue-rotate(332deg) brightness(96%) contrast(97%);
-}
-
-.main__team-box-cart-wrap-arrow-link-bg {
+.main__team-box-cart-link-wrap-arrow-bg {
   width: 32px;
   height: 32px;
   background-color: #F5F5FA;
@@ -1821,7 +1821,7 @@ a {
   .main__team-box-cart:not(:last-child) {
     margin-bottom: 0;
   }
-  .main__team-box-cart-pic-img {
+  .main__team-box-cart-link-pic-img {
     width: 100%;
     height: 400px;
     -o-object-fit: cover;
@@ -1839,7 +1839,7 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .main__team-box-cart-pic-img {
+  .main__team-box-cart-link-pic-img {
     height: auto;
   }
 }

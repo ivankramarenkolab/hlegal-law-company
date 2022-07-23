@@ -56,10 +56,10 @@ solutionButton.forEach((button, i) => {
         solutionText.forEach((text, j) => {
             if (i === j) {
                 solutionButton[j].classList.add('solution__box-subject-link--active')
-                solutionText[j].classList.add('visible')
+                solutionText[j].classList.add('solution__box-info--visible')
             } else {
                 solutionButton[j].classList.remove('solution__box-subject-link--active')
-                solutionText[j].classList.remove('visible')
+                solutionText[j].classList.remove('solution__box-info--visible')
             }
         })
     })

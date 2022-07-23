@@ -963,10 +963,7 @@ a {
   color: #ffffff;
 }
 
-.consistent-text.visible,
-.customer-text.visible,
-.innovative-text.visible,
-.business-text.visible {
+.solution__box-info--visible {
   display: block;
 }
 

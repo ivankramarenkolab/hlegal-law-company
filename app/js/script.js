@@ -1,4 +1,4 @@
-        // <!-- Slider About page -->
+// <!-- Slider About page -->
 $('.slider__about-wrap-box').slick({
     dots: true,
     infinite: true,
@@ -9,14 +9,14 @@ $('.slider__about-wrap-box').slick({
     mobileFirst: true,
     responsive: [
         {
-        breakpoint: 767,
-        settings: {
-            slidesToShow: 4,
-            infinite: true,
-            dots: true,
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 4,
+                infinite: true,
+                dots: true,
+            }
         }
-    }
-]
+    ]
 });
 
 // <!-- Burger menu -->
@@ -38,10 +38,8 @@ closeicon.addEventListener('click', () => {
     body.classList.remove('stop-scroll');
 });
 
-body.addEventListener('click', (event) => {
-    const element = event.target;
-
-    if (element.classList.contains('header__menu')) {
+body.addEventListener('click', ({target}) => {
+    if (target.classList.contains('header__menu')) {
         menu.classList.remove('show');
         overlay.classList.remove('show');
         burger.classList.remove('show');
@@ -49,61 +47,25 @@ body.addEventListener('click', (event) => {
     }
 });
 
-        // <!-- Solution -->
-var consistent = document.querySelector('.consistent');
-var consistent_text = document.querySelector('.consistent-text');
-var customer = document.querySelector('.customer');
-var customer_text = document.querySelector('.customer-text');
-var innovative = document.querySelector('.innovative');
-var innovative_text = document.querySelector('.innovative-text');
-var business = document.querySelector('.business');
-var business_text = document.querySelector('.business-text');
+// <!-- Solution -->
+var solutionButton = document.querySelectorAll('.solution__box-subject-link');
+var solutionText = document.querySelectorAll('.solution__box-info');
 
-consistent.addEventListener('click', () => {
-    consistent_text.classList.add('visible');
-    customer_text.classList.remove('visible');
-    innovative_text.classList.remove('visible');
-    business_text.classList.remove('visible');
-    consistent.classList.add('solution__box-subject-link--active');
-    customer.classList.remove('solution__box-subject-link--active');
-    innovative.classList.remove('solution__box-subject-link--active');
-    business.classList.remove('solution__box-subject-link--active');
-});
+solutionButton.forEach((button, i) => {
+    button.addEventListener('click', () => {
+        solutionText.forEach((text, j) => {
+            if (i === j) {
+                solutionButton[j].classList.add('solution__box-subject-link--active')
+                solutionText[j].classList.add('visible')
+            } else {
+                solutionButton[j].classList.remove('solution__box-subject-link--active')
+                solutionText[j].classList.remove('visible')
+            }
+        })
+    })
+})
 
-customer.addEventListener('click', () => {
-    consistent_text.classList.remove('visible');
-    customer_text.classList.add('visible');
-    innovative_text.classList.remove('visible');
-    business_text.classList.remove('visible');
-    consistent.classList.remove('solution__box-subject-link--active');
-    customer.classList.add('solution__box-subject-link--active');
-    innovative.classList.remove('solution__box-subject-link--active');
-    business.classList.remove('solution__box-subject-link--active');
-});
-
-innovative.addEventListener('click', () => {
-    consistent_text.classList.remove('visible');
-    customer_text.classList.remove('visible');
-    innovative_text.classList.add('visible');
-    business_text.classList.remove('visible');
-    consistent.classList.remove('solution__box-subject-link--active');
-    customer.classList.remove('solution__box-subject-link--active');
-    innovative.classList.add('solution__box-subject-link--active');
-    business.classList.remove('solution__box-subject-link--active');
-});
-
-business.addEventListener('click', () => {
-    consistent_text.classList.remove('visible');
-    customer_text.classList.remove('visible');
-    innovative_text.classList.remove('visible');
-    business_text.classList.add('visible');
-    consistent.classList.remove('solution__box-subject-link--active');
-    customer.classList.remove('solution__box-subject-link--active');
-    innovative.classList.remove('solution__box-subject-link--active');
-    business.classList.add('solution__box-subject-link--active');
-});
-
-        // <!-- Slider Home page -->
+// <!-- Slider Home page -->
 $('.slider').slick({
     dots: true,
     infinite: true,
@@ -111,4 +73,4 @@ $('.slider').slick({
     slidesToShow: 1,
     adaptiveHeight: true,
     arrows: false
-    });
+});

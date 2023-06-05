@@ -1,6 +1,7 @@
 # HLegal Law Company
 
-HLegal Law Company is a website for a fictional law firm. It provides information about the services offered by the law firm, the team of lawyers, and contact details for potential clients. The website is built using modern front-end technologies, including HTML, CSS, JavaScript, Gulp, and Sass.
+HLegal Law Company is a website for a fictional law firm. It provides information about the services offered by the law firm, the team of lawyers, and contact details for potential clients. The website is built using modern front-end technologies, including HTML, CSS, JavaScript, Gulp, and Sass.<br>
+Pages: https://ivankramarenkolab.github.io/hlegal-law-company-site/#arrow-down
 
 ## Features
 
